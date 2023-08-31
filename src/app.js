@@ -1,4 +1,4 @@
-const express = require('exppress')
+const express = require('express')
 const path = require('path')
 const exphbs = require('express-handlebars')
 const morgan = require('morgan')
@@ -22,7 +22,7 @@ app.use(express.urlencoded({
 }))
 
 //Rutas
-app.use(require('./rputes/index'))
+app.use(require('./routes/index'))
 
 //Archivos estaticos
 app.use('/public', express.static(path.join(__dirname, 'public')))
